@@ -1,0 +1,53 @@
+.buttonsHeader{
+ margin-Left:600px;
+position:relative;
+ bottom:20px;
+ gap: 10px;
+}
+
+.btn-link {
+color: #000;
+background-color: #007bff;
+padding: 5px 7px;
+border-radius: 5px;
+margin-left: px;
+border: none !important;
+&:hover{
+background-color: #007bff;
+  color: #007bff;
+  background-color: #000;
+}
+}
+.btn-primary{
+  color: #000;
+background-color: #007bff;
+padding: 5px 7px;
+border-radius: 5px;
+border: none !important;
+margin-left: 15px;
+&:hover {
+  color: #007bff;
+  background-color: #000;
+}
+}
+  .header nav ul li {
+ color:  #111827  ;
+ font-weight: bolder;
+ &:hover{
+  color: blue ;
+  font-weight: bolder;
+ }
+  }
+  
+.admin-btn{
+    background-color: blueviolet;
+   color: #000;
+padding: 5px 7px;
+border-radius: 5px;
+border: none !important;
+margin-left: 15px;
+&:hover {
+  color: #007bff;
+  background-color: #000;
+}
+}

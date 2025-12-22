@@ -1,0 +1,59 @@
+.form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.form-container form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.form-container form h2 {
+    margin-bottom: 20px;
+}
+
+.form-container form .inputStyle{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none; 
+}
+
+.form-container form .label {
+ display: block;
+ margin-bottom: 5px;
+}
+
+.form-container form .btn-container {
+   display: flex;
+   justify-content: space-between; 
+}
+
+.form-container form .btn-container .btn {
+   color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-container form .btn-container .cancel-btn {
+    background: #aaa;
+}
+
+.form-container form .btn-container .save-btn {
+  background: #2e7dff;
+}
