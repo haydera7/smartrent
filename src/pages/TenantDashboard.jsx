@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "../styles/TenantDashboard.css";
+import "../styles/TenantDashBoard.css";
 import Chatbot from "../components/Chatbot";
 import BookingChat from "../components/BookingChat";
 
-import { jwtDecode } from "jwt-decode";
+import jwtDecode from "jwt-decode";
+
 
 const API_URL = import.meta.env.VITE_API_URL;
 
