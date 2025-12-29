@@ -47,8 +47,7 @@ useEffect(() => {
 const filteredProperties = properties.filter(
   (p) =>
     p.location?.toLowerCase().includes(searchLocation.toLowerCase()) &&
-    (!filterStatus ||
-      p.status?.toLowerCase() === filterStatus.toLowerCase())
+    (!filterStatus || p.status?.toLowerCase() === filterStatus.toLowerCase())
 );
 
 
@@ -195,31 +194,51 @@ useEffect(() => {
           {error && <div style={{ color: "red", marginBottom: 10 }}>{error}</div>}
 {activeTab === "home" && (
   <section className="home-section">
-    <h1 className="home-title">Discover Your Next Home 🏡</h1>
-    <p className="home-subtitle">
-      Browse available properties from trusted landlords on RentEasy
-    </p>
+    {/* 🌟 Hero Section */}
+<div className="hero-section">
+  <div className="hero-overlay"></div>
 
-    {/* 🔍 Search & Filter Bar */}
-    <div className="search-bar">
-      <input
-        type="text"
-        placeholder="Search by location..."
-        value={searchLocation}
-        onChange={(e) => setSearchLocation(e.target.value)}
-      />
+  <div className="hero-container">
+    
+    {/* Left Content */}
+    <div className="hero-content">
+      <span className="hero-badge">Trusted Rental Platform</span>
 
-      <select
-        value={filterStatus}
-        onChange={(e) => setFilterStatus(e.target.value)}
-      >
-        <option value="">All Status</option>
-        <option value="Active">Active</option>
-        <option value="Pending">Pending</option>
-        <option value="Rented">Rented</option>
-      </select>
+      <h1 className="hero-title">
+        Find Your Perfect Home <span>With Ease</span>
+      </h1>
+
+      <p className="hero-subtitle">
+        Explore verified rental properties from reliable landlords across Ethiopia.
+        Simple. Secure. Fast.
+      </p>
+
+      <div className="hero-search">
+        <input
+          type="text"
+          placeholder="Search by location..."
+          value={searchLocation}
+          onChange={(e) => setSearchLocation(e.target.value)}
+        />
+
+        <select
+          value={filterStatus}
+          onChange={(e) => setFilterStatus(e.target.value)}
+        >
+          <option value="">All Status</option>
+          <option value="Active">Active</option>
+          <option value="Pending">Pending</option>
+          <option value="Rented">Rented</option>
+        </select>
+      </div>
     </div>
 
+  </div>
+</div>
+
+
+
+  
     {/* 🏠 Filtered Property Cards */}
     <div className="property-grid">
       {filteredProperties.length > 0 ? (

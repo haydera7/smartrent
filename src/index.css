@@ -99,6 +99,164 @@ body {
 }
 
 
+/* 🌟 Hero Section */
+/* 🌟 Hero Wrapper */
+.hero-section {
+  position: relative;
+  min-height: 90vh;
+  background-image: url("https://images.unsplash.com/photo-1502673530728-f79b4cab31b1");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Container (like max-w-7xl mx-auto px-6) */
+.hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+/* Two columns on desktop */
+
+@media (max-width: 1142px){
+  .hero-container{
+    position: relative;
+    left: 5%;
+  }
+}
+@media (max-width: 1001px){
+  .hero-container{
+    position: relative;
+    left: 15%;
+  }
+}
+@media (max-width: 763px){
+  .hero-container{
+    position: relative;
+    left: 25%;
+  }
+}
+@media (max-width: 583px){
+  .hero-container{
+    position: relative;
+    left: 30%;
+  }
+ .hero-title{
+  font-size: 20px !important;
+ }
+ .hero-subtitle{
+  font-size: 10px !important;
+  
+ }
+}
+@media (max-width: 432px){
+  .hero-container{
+    position: relative;
+    left: 35%;
+  }
+ .hero-title{
+  font-size: 15px !important ;
+ }
+ .hero-subtitle{
+  font-size: 8px !important;
+  
+ }
+}
+
+
+
+/* Badge */
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+/* Title */
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.hero-title span {
+  color: #facc15;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: #e5e7eb;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+/* Search (same responsiveness as Tailwind flex-col sm:flex-row) */
+.hero-search {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: white;
+  padding: 14px;
+  border-radius: 16px;
+  max-width: 520px;
+}
+
+@media (min-width: 640px) {
+  .hero-search {
+    flex-direction: row;
+  }
+}
+
+.hero-search input,
+.hero-search select {
+  flex: 1;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.hero-search input:focus,
+.hero-search select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Mobile spacing */
+@media (max-width: 640px) {
+  .hero-section {
+    min-height: auto;
+    padding: 80px 0;
+  }
+}
+
+
+
 .property-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -460,7 +618,7 @@ align-items: center;
 gap: 20px;
 
 }
-
+ 
 /*For dashboards*/
 .dashboard-container {
   display: flex;

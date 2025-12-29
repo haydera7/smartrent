@@ -7,7 +7,6 @@ import "./index.css"; // ✅ THIS IMPORT IS REQUIRED
 
 ReactDOM.createRoot(document.getElementById("root")).render(
  <BrowserRouter>
-
     <App />
   </BrowserRouter>
 );
