@@ -19,10 +19,9 @@ function Header({
   };
 
   const handleActionClick = (action) => {
-  action();
-  setMenuOpen(false);
-};
-
+    action();
+    setMenuOpen(false);
+  };
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -38,7 +37,8 @@ function Header({
     };
 
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    return () =>
+      document.removeEventListener("mousedown", handleClickOutside);
   }, [menuOpen]);
 
   return (
@@ -71,34 +71,33 @@ function Header({
           <div className="auth-area">
             <span>Welcome, {user.name}</span>
             <button
-  onClick={() => handleActionClick(onLogout)}
-  className="btn-logout">Logout</button>
-
+              onClick={() => handleActionClick(onLogout)}
+              className="btn-logout"
+            >
+              Logout
+            </button>
           </div>
         ) : (
           <div className="buttonsHeader">
-  <button
-    onClick={() => handleActionClick(onLoginClick)}
-    className="btn-link"
-  >
-    Sign In
-  </button>
-
-  <button
-    onClick={() => handleActionClick(onSignupClick)}
-    className="btn-primary"
-  >
-    Sign Up
-  </button>
-
-  <button
-    onClick={() => handleActionClick(onAdminClick)}
-    className="admin-btn"
-  >
-    Admin Panel
-  </button>
-</div>
-
+            <button
+              onClick={() => handleActionClick(onLoginClick)}
+              className="btn-link"
+            >
+              Sign In
+            </button>
+            <button
+              onClick={() => handleActionClick(onSignupClick)}
+              className="btn-primary"
+            >
+              Sign Up
+            </button>
+            <button
+              onClick={() => handleActionClick(onAdminClick)}
+              className="admin-btn"
+            >
+              Admin Panel
+            </button>
+          </div>
         )}
       </nav>
     </header>

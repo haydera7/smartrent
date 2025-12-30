@@ -47,8 +47,10 @@ useEffect(() => {
 const filteredProperties = properties.filter(
   (p) =>
     p.location?.toLowerCase().includes(searchLocation.toLowerCase()) &&
-    (!filterStatus || p.status?.toLowerCase() === filterStatus.toLowerCase())
+    (!filterStatus ||
+      p.status?.toLowerCase() === filterStatus.toLowerCase())
 );
+
 
 
 
