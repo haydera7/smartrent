@@ -219,40 +219,25 @@ body {
   background-color: #1c9b6673;
   
 }
-.message-btn{
+.message-btn {
   background-color: #4f2ebca3;
   color: white;
   border: none;
   padding: 10px 16px;
-    font-weight: bolder;
+  font-weight: bolder;
   border-radius: 30px;
   cursor: pointer;
   margin-top: 10px;
   width: 100%;
   transition: 0.3s;
-  &:hover{
-     color:  #4f2ebca3;
-      background-color: rgba(231, 195, 13, 0.534);
-         font-weight: bolder;
-  }
 }
-.rent-btnn{
-  background-color: #8510a9a3;
-  color: white;
+
+.message-btn:hover {
+  color: #4f2ebca3;
+  background-color: rgba(231, 195, 13, 0.534);
   font-weight: bolder;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 30px;
-  cursor: pointer;
-  margin-top: 10px;
-  width: 100%;
-  transition: 0.3s;
-  &:hover {
-     background-color: rgba(23, 165, 120, 0.317) ;
-  color: #8510a9a3;
-  font-weight: bolder;
-  }
 }
+
 
 /* Footer */
 .footer {
