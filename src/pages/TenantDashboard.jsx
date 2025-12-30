@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "../styles/TenantDashBoard.css";
+import "../styles/TenantDashboard.css";
 import Chatbot from "../components/Chatbot";
 import BookingChat from "../components/BookingChat";
 
